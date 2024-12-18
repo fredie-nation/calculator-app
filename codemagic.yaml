@@ -9,6 +9,9 @@ workflows:
       - name: Install Dependencies
         script: flutter pub get
 
+      - name: Generate Dependency Injection Files
+        script: flutter pub run build_runner build --delete-conflicting-outputs
+
       - name: Build APK
         script: flutter build apk --release
 
