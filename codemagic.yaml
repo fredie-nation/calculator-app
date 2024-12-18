@@ -4,7 +4,6 @@ workflows:
 
     environment:
       flutter: stable # Pastikan versi Flutter yang diinginkan
-      android: latest # Gunakan versi terbaru dari Android SDK
 
     scripts:
       - name: Install Dependencies
