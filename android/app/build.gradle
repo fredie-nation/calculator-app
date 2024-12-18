@@ -25,7 +25,7 @@ if (flutterVersionName == null) {
 
 android {
     namespace = "com.ragheb.neumorphic_calculator"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = flutter.compileSdkVersion 34
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
