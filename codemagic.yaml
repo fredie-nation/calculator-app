@@ -1,17 +1,17 @@
 workflows:
+  android-apk-workflow:
+    name: Build Android APK
 
-    android-workflow-id:
+    environment:
+      flutter: stable # Pastikan versi Flutter yang diinginkan
+      android: latest # Gunakan versi terbaru dari Android SDK
 
-        name: Android Sample Workflow
+    scripts:
+      - name: Install Dependencies
+        script: flutter pub get
 
-        # .......    
+      - name: Build APK
+        script: flutter build apk --release
 
-        # .......
-
-        # .......  
-
-    ios-workflow-id:
-
-        name: iOS Sample Workflow
-
-        # ......
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
